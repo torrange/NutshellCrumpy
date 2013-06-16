@@ -563,7 +563,6 @@ class Nutshell(object):
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
     Nutshell.response=self.r.content
-    print self.response
 
   def findLead_Outcomes(self, orderBy="description",
       orderDirection="ASC", limit=50,page=1):
@@ -580,7 +579,6 @@ class Nutshell(object):
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
     Nutshell.response=self.r.content
-    print self.response
 
   def findLeads(self, orderBy="id",
       orderDirection="ASC", limit=50,
@@ -670,7 +668,6 @@ class Nutshell(object):
           "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
     Nutshell.response=self.r.content
-    print self.response
 
   def findProducts(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1,
@@ -689,7 +686,6 @@ class Nutshell(object):
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
     Nutshell.response=self.r.content
-    print self.response
 
   def findSettings(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1):
