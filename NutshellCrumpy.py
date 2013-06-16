@@ -19,7 +19,7 @@ class Nutshell(object):
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
     self.response=self.r.content
-    print self.response
+
   def deleteAccount(self, accountid, rev=None):
     self.payload=json.dumps(
         {"method" : "deleteAccount",
