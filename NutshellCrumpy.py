@@ -2,7 +2,6 @@
 
 import requests
 import json
-import repr
 
 class Nutshell(object):
   response=None
