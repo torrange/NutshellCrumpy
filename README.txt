@@ -1,3 +1,7 @@
+NutshellCrumpy: Nutshell API Wrapper for Python
+
+[Usage]
+
 >>>from NutshellCrumpy import Nutshell
 >>>n=nutshell(user, api_key)
 >>>n.findIndustries(limit=1)
