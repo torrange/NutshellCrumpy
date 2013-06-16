@@ -1,7 +1,7 @@
-NutshellCrumpy
+<h1>NutshellCrumpy</h1>
 ==============
 
-Python wrapper for Nutshell CRM API
+<h2>Python wrapper for Nutshell CRM API</h2>
 
 <h3>Some basic examples:</h3>
 <body>
