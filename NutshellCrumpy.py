@@ -20,7 +20,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def deleteAccount(self, accountid, rev=None):
     self.payload=json.dumps(
@@ -30,7 +30,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def deleteActivity(self, activityid, rev=None):
     self.payload=json.dumps(
@@ -40,7 +40,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def deleteContact(self, contactid, rev=None):
     self.payload=json.dumps(
@@ -50,7 +50,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def deleteLead(self, leadid, rev=None):
     self.payload=json.dumps(
@@ -60,7 +60,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def deleteNote(self, noteid, rev=None):
     self.payload=json.dumps(
@@ -70,7 +70,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def deleteProduct(self, productid, rev=None):
     self.payload=json.dumps(
@@ -80,7 +80,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def deleteTask(self, taskid, rev=None):
     self.payload=json.dumps(
@@ -90,7 +90,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def deleteTeam(self, teamid, rev=None):
     self.payload=json.dumps(
@@ -100,7 +100,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def deleteUser(self, userid, rev=None):
     self.payload=json.dumps(
@@ -110,7 +110,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def editAccount(self, accountid, rev=None,
       name=None, phone=None,
@@ -136,7 +136,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def editActivity(self, activityId, rev=None,
       name=None, startTime=None, endTime=None,
@@ -176,7 +176,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def editContact(self, contactId, rev=None,
       name=None, phone=None,
@@ -204,7 +204,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def editLead(self, leadId, rev=None,
       primary_account=None, market=None,
@@ -245,7 +245,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def editLeadclose(self, leadId,
       id=None, rev=None,
@@ -276,7 +276,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def editNote(self, noteid, note, rev=None):
     self.payload = json.dumps(
@@ -286,7 +286,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def editProduct(self, productid, product=None, rev=None):
     self.payload = json.dumps(
@@ -296,7 +296,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def editStep(self, stepid, assignee=None,
       status=None, choice=None, delay=None,
@@ -317,7 +317,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def editTask(self, taskid, task=None, rev=None):
     self.payload = json.dumps(
@@ -327,7 +327,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def editTeam(self, teamid, team=None, rev=None):
     self.payload = json.dumps(
@@ -337,7 +337,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def editUser(self, userid, emails=None,
       teams=None, sendInvite=None,
@@ -370,7 +370,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findAccounts(self, orderBy="name",
       orderDirection="ASC", limit=50,
@@ -403,7 +403,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findAccountTypes(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1):
@@ -419,7 +419,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findActivities(self, orderBy="name",
       orderDirection="ASC", limit=50,
@@ -459,7 +459,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findActivityTypes(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1):
@@ -475,12 +475,12 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findBackups(self):
     self.payload = json.dumps({"method" : "findBackups","id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findCompetitors(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1):
@@ -496,7 +496,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findContacts(self, orderBy="id",
       orderDirection="ASC", limit=50,
@@ -524,12 +524,12 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findCustomFields(self):
     self.payload = json.dumps({"method" : "findCustomFields","id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findDelays(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1):
@@ -545,7 +545,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findIndustries(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1):
@@ -561,7 +561,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findLead_Outcomes(self, orderBy="description",
       orderDirection="ASC", limit=50,page=1):
@@ -577,7 +577,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findLeads(self, orderBy="id",
       orderDirection="ASC", limit=50,
@@ -610,7 +610,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findMarkets(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1):
@@ -626,7 +626,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findMilestones(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1):
@@ -642,12 +642,12 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findOrigins(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1):
     self.payload = json.dumps(
-        {"method" : "findOrigin",
+        {"method" : "findOrigins",
           "params" : {
             "orderBy" : orderBy,
             "orderDirection" : orderDirection,
@@ -658,7 +658,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findProcesses(self, query=None):
     self.payload = json.dumps(
@@ -666,7 +666,7 @@ class Nutshell(object):
           "params" : {"query" : query},
           "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findProducts(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1,
@@ -684,7 +684,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findSettings(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1):
@@ -700,7 +700,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findSources(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1):
@@ -716,18 +716,18 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findTags(self):
     self.payload = json.dumps({"method" : "findTags","id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
 
   def findTasks(self, query=None):
     self.payload = json.dumps({"method" : "findTasks", "params" : {"query" : query}, "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findTeams(self, orderBy="name",
       orderDirection="ASC", limit=50,page=1):
@@ -743,7 +743,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findTerritories (self, orderBy="name",
       orderDirection="ASC", limit=50,page=1):
@@ -759,7 +759,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findTimeline (self, orderBy="time",
       orderDirection="ASC", limit=50,page=1,
@@ -778,7 +778,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def findUsers(self, orderBy="last_name",
       orderDirection="ASC", limit=50,page=1):
@@ -794,7 +794,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def getAccount(self, accountId=None, rev=None):
     self.payload = json.dumps(
@@ -807,7 +807,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def getActivity(self, activityId=None, rev=None):
     self.payload = json.dumps(
@@ -820,7 +820,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def getAnalyticsReport(self, reportType=None,
       period=None, filter=None,options=None):
@@ -836,7 +836,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def getContact(self, contactId=None, rev=None):
     self.payload = json.dumps(
@@ -849,7 +849,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def getEmail(self, emailId=None, rev=None):
     self.payload = json.dumps(
@@ -862,7 +862,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def getLead(self, leadId=None, rev=None):
     self.payload = json.dumps(
@@ -875,7 +875,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def getNote(self, noteId=None, rev=None):
     self.payload = json.dumps(
@@ -888,7 +888,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def getProduct(self, productId=None, rev=None):
     self.payload = json.dumps(
@@ -901,7 +901,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def getTask(self, taskId=None, rev=None):
     self.payload = json.dumps(
@@ -914,7 +914,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def getTeam(self, teamId=None, rev=None):
     self.payload = json.dumps(
@@ -927,12 +927,12 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def getUpdateTimes(self):
     self.payload = json.dumps({"method" : "getUpdateTimes","id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def getUser(self, userId=None, rev=None):
     self.payload = json.dumps(
@@ -945,7 +945,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def newAccount(self,
       name=None, owner=None,industryId=None,
@@ -986,7 +986,7 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
 
   def newActivity(self,
@@ -1027,12 +1027,12 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def newBackup(self):
     self.payload = json.dumps({"method" : "newBackup","id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def newContact(self,
       name=None, owner=None,
@@ -1072,14 +1072,14 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def newEmail(self, emailString=None):
     self.payload = json.dumps({"method" : "newEmail",
       "params" : {"emailString" : emailString},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def newLead(self, primaryAccount=None, dueTime=None,
       market=None, accounts=None, contacts=None,
@@ -1118,14 +1118,14 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def newNote(self, entity=None, note=None):
     self.payload = json.dumps({"method" : "newNote",
       "params" : {"entity" : entity, "note" : note},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def newProduct(self, name=None, type=None,
       sku=None, unit=None, prices=None):
@@ -1147,35 +1147,35 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def newSource(self, name=None):
     self.payload = json.dumps({"method" : "newSource",
       "params" : {"name" : name},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def newTag(self, tag=None):
     self.payload = json.dumps({"method" : "newTag",
       "params" : {"tag" : tag},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def newTask(self, task=None):
     self.payload = json.dumps({"method" : "newTask",
       "params" : {"task" : task},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def newTeam(self, team=None):
     self.payload = json.dumps({"method" : "newTeam",
       "params" : {"team" : team},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def newUser(self,
       firstName=None, lastName=None,
@@ -1203,79 +1203,79 @@ class Nutshell(object):
           }
         )
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def searchAccounts(self, string=None, limit=10):
     self.payload = json.dumps({"method" : "searchAccounts",
       "params" : {"string" : string, "limit" : limit},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def searchActivityParticipants(self, string=None, limit=10):
     self.payload = json.dumps({"method" : "searchActivityParticipants",
       "params" : {"string" : string, "limit" : limit},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def searchByEmail(self, emailAddressString=None):
     self.payload = json.dumps({"method" : "searchByEmail",
       "params" : {"emailAddressString" : emailAddressString},"id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def searchCompetitors(self, string=None, limit=10):
     self.payload = json.dumps({"method" : "searchCompetitors",
       "params" : {"string" : string, "limit" : limit},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def searchContacts(self, string=None, limit=10):
     self.payload = json.dumps({"method" : "searchContacts",
       "params" : {"string" : string, "limit" : limit},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def searchContactsAndUsers(self, string=None, limit=10):
     self.payload = json.dumps({"method" : "searchContactsAndUsers",
       "params" : {"string" : string, "limit" : limit},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def searchLeads(self, string=None, limit=40):
     self.payload = json.dumps({"method" : "searchLeads",
       "params" : {"string" : string, "limit" : limit},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def searchProducts(self, string=None, limit=10):
     self.payload = json.dumps({"method" : "searchProducts",
       "params" : {"string" : string, "limit" : limit},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def searchSources(self, string=None, limit=10):
     self.payload = json.dumps({"method" : "searchSources",
       "params" : {"string" : string, "limit" : limit},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def searchUniversal(self, string=None):
     self.payload = json.dumps({"method" : "searchUniversal",
       "params" : {"string" : string},"id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
 
   def searchUsersAndTeams(self, string=None, limit=10):
     self.payload = json.dumps({"method" : "searchUsersAndTeams",
       "params" : {"string" : string, "limit" : limit},
       "id" : "apeye"})
     self.r=requests.post(self.uri, auth=self.auth, data=self.payload)
-    Nutshell.response=self.r.content
+    Nutshell.response=json.loads(self.r.content) ; print Nutshell.response
